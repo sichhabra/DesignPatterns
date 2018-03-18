@@ -1,43 +1,43 @@
 import java.util.ArrayList;
 import java.util.List;
 
-abstract class Room {
+abstract class IRoom {
 
 }
 
-class MagicRoom extends Room {
+class MagicRoom extends IRoom {
 
 }
 
-class OrdinaryRoom extends Room {
+class OrdinaryRoom extends IRoom {
 
 }
 
 abstract class MazeGame {
 
-	private List<Room> rooms = new ArrayList<Room>();
+	private List<IRoom> rooms = new ArrayList<IRoom>();
 
 	public MazeGame() {
-		Room room = makeRoom();
-		rooms.add(room);
+		IRoom IRoom = makeRoom();
+		rooms.add(IRoom);
 	}
 
 	// factoryMethod
-	abstract protected Room makeRoom();
+	abstract protected IRoom makeRoom();
 }
 
 class MagicMazeGame extends MazeGame {
 	@Override
-	protected Room makeRoom() {
-		System.out.println("Magic Room Created!");
+	protected IRoom makeRoom() {
+		System.out.println("Magic IRoom Created!");
 		return new MagicRoom();
 	}
 }
 
 class OrdinaryMazeGame extends MazeGame {
 	@Override
-	protected Room makeRoom() {
-		System.out.println("Ordinary Room Created!");
+	protected IRoom makeRoom() {
+		System.out.println("Ordinary IRoom Created!");
 		return new OrdinaryRoom();
 	}
 }
