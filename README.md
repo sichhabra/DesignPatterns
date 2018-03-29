@@ -15,4 +15,6 @@ Decorator Pattern
 # Behavioural Pattern:  
 Template Method Pattern  
 Chain Of Responsibility Pattern  
-State Pattern
+State Pattern  
+Command Pattern  
+Mediator Pattern  
