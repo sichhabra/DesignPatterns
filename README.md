@@ -18,3 +18,4 @@ Chain Of Responsibility Pattern
 State Pattern  
 Command Pattern  
 Mediator Pattern  
+Observer Pattern  
