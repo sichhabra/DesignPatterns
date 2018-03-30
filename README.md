@@ -19,3 +19,6 @@ State Pattern
 Command Pattern  
 Mediator Pattern  
 Observer Pattern  
+
+# Architectural Pattern
+MVC Pattern  
